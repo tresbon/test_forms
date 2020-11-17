@@ -26,6 +26,15 @@ class _ProperFormState extends State<ProperForm> {
           children: <Widget>[
             TextFormField(
 
+            ),
+            Checkbox(
+              value: true,
+              onChanged: (val) {
+                if (val) {
+                  !val;
+                } else val;
+              },
+
             )
           ],
         ),
