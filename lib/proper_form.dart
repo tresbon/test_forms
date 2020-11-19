@@ -38,8 +38,15 @@ class _ProperFormState extends State<ProperForm> {
             ),
             DropdownButton(
               items: [
+                DropdownMenuItem(
+                  child: Text('Hello'),
+                  value: 'val',
+                )
 
               ],
+            ),
+            RaisedButton(
+              child: Text('Send'),
             )
           ],
         ),
