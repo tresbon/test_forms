@@ -37,13 +37,14 @@ class _ProperFormState extends State<ProperForm> {
 
             ),
             DropdownButton(
-              items: [
-                DropdownMenuItem(
-                  child: Text('Hello'),
-                  value: 'val',
-                )
-
-              ],
+              items: 
+              <String>['One', 'Two', 'Three'].map<DropdownMenuItem<String>>
+                ((String val) {
+                  return DropdownMenuItem(
+                    value: val,
+                    child: Text(val),
+                  );
+              }).toList(),
             ),
             RaisedButton(
               child: Text('Send'),
